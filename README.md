@@ -1,12 +1,40 @@
-# React + Vite
+# DataVexis – USA Based Software Agency Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Fully responsive, modern web application built using React.js + Vite for a USA-based IT & Software agency. Designed to showcase services, portfolio, client success stories, and contact options with smooth UI/UX and eye-catching animations.
 
-Currently, two official plugins are available:
+# 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React.js (Vite)
 
-## Expanding the ESLint configuration
+Tailwind CSS / Custom CSS
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+JavaScript (ES6+)
+
+React Icons
+
+# ✨ Key Features
+
+Mobile-first responsive design
+
+Services & solutions showcase
+
+Dynamic portfolio/projects section
+
+Testimonials & blog sections
+
+Contact form with social links integration
+
+Clean and reusable component-based architecture
+
+# 📁 Getting Started Locally
+```bash
+git clone https://github.com/Usman-Awan345/DataVexis.git
+cd DataVexis
+npm install
+npm run dev
+```
+
+
+# 📦 Build for Production
+```bash
+npm run build
