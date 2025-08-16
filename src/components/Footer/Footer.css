@@ -1,0 +1,263 @@
+/* ============ Footer Base ============ */
+.footer {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #fff;
+  padding: 70px 20px 20px;
+  font-family: 'Poppins', sans-serif;
+  border-top: 2px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 40px;
+  max-width: 1330px;
+  margin: auto;
+}
+
+/* ============ Company Info Section ============ */
+.footer-column.about {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 23px 94px;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 319px;
+  width: 459px;
+  position: relative;
+  right: 200px;
+}
+
+.footer-column.about:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.footer-column.about .brand-name {
+  font-size: 2rem;
+  font-weight: 700;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.footer-column.about p {
+  color: #ccc;
+  margin-bottom: 20px;
+  max-width: 280px;
+  line-height: 1.6;
+}
+
+/* ============ Social Icons ============ */
+.social-icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.15);
+}
+
+/* Facebook */
+.social-icons .fb {
+  color: #1877f2;
+}
+
+/* Instagram */
+.social-icons .ig {
+  color: #e4405f;
+}
+
+/* LinkedIn */
+.social-icons .ln {
+  color: #0a66c2;
+}
+
+/* Hover Effect */
+.social-icons a:hover {
+  transform: translateY(-4px) scale(1.08);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* ============ Quick Links & Services ============ */
+.footer-column h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.address h4{
+   font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 10px 0;
+}
+
+.footer-column ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #007bff;
+}
+
+/* ============ Contact Info ============ */
+.contact p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: #007bff;
+}
+
+/* ============ Footer Bottom ============ */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.footer-column {
+  display: table-column;
+  position: relative;
+  padding: 25px;
+}
+
+
+.footer-column h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-column .social-icons {
+  margin-top: 10px;
+}
+
+
+/* =========================
+   ✅ RESPONSIVENESS
+   ========================= */
+
+/* ✅ Large screens (1200px and below) */
+@media (max-width: 1200px) {
+  .footer-container {
+    gap: 30px;
+  }
+  .footer-column.about {
+    right: 100px;
+    width: 420px;
+  }
+}
+
+/* ✅ Medium screens (991px and below) */
+@media (max-width: 991px) {
+  .footer-container{
+    flex-direction: column;
+  }
+    .footer {
+    padding: 50px 15px 15px;
+  }
+  .footer-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    text-align: center;
+  }
+  .footer-column.about {
+    position: relative;
+    right: 0;
+    width: 100%;
+    padding: 20px 40px;
+    height: auto;
+    margin: auto;
+  }
+  .footer-column.about p {
+    max-width: 100%;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+/* ✅ Tablets (768px and below) */
+@media (max-width: 768px) {
+   .footer-container{
+    flex-direction: column;
+  }
+    .footer {
+    padding: 50px 15px 15px;
+  }
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .footer-column.about {
+    padding: 20px;
+  }
+  .footer-column ul {
+    padding: 0;
+  }
+  .footer-column h4 {
+    margin-top: 10px;
+  }
+}
+
+/* ✅ Small devices (500px and below) */
+@media (max-width: 500px) {
+   .footer-container{
+    flex-direction: column;
+    text-align: center;
+    /* width: 387px; */
+  }
+  .footer {
+    padding: 50px 15px 15px;
+     width: 395px;
+  }
+  .footer-column.about {
+    padding: 15px;
+    width: 100%;
+  }
+  .footer-column.about .brand-name {
+    font-size: 1.6rem;
+  }
+  .footer-column ul li {
+    margin: 8px 0;
+  }
+  .footer-bottom {
+    font-size: 0.8rem;
+  }
+}

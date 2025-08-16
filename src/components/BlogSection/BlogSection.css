@@ -1,0 +1,136 @@
+.blog-section {
+  padding: 100px 20px;
+  background: linear-gradient(to bottom right, #f6f7fb, #eef2f6);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.blog-header h2 {
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: #0f172a;
+  position: relative;
+}
+
+.blog-header h2 span {
+  color: #7d2ae8;
+}
+
+.blog-header p {
+  color: #555;
+  margin-bottom: 50px;
+  font-size: 1.15rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Blog container grid */
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Blog Card */
+.blog-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(14px);
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.blog-card::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #7d2ae8, #7d2ae8, #7d2ae8);
+  z-index: -1;
+  filter: blur(250px);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.blog-card:hover::before {
+  opacity: 0.6;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 123, 255, 0.15);
+}
+
+/* Blog image */
+.blog-img img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Blog content */
+.blog-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.blog-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #0f172a;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  line-height: 1.4;
+}
+
+.blog-content h3:hover {
+  color: #6a11cb;
+}
+
+.blog-content p {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+}
+
+/* Blog meta info */
+.blog-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #888;
+  font-size: 0.85rem;
+  margin-bottom: 18px;
+}
+
+/* Read More Button */
+.read-more {
+  display: inline-block;
+  padding: 10px 14px;
+  background: var(--gradient-color-bg);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.read-more:hover {
+  background: linear-gradient(90deg, #6a11cb, #007bff);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 500px) {
+   .blog-section{
+    width: 395px;
+   }
+}

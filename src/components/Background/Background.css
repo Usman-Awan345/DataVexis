@@ -1,0 +1,87 @@
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+
+    /* ✅ Zoom animation (5s) */
+    animation: slowZoom 5s ease-in-out forwards;
+}
+
+/* ✅ Overlay color */
+.background-container::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+/* ✅ Keyframes for zoom-in */
+@keyframes slowZoom {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@media (min-width: 300px) and (max-width: 1400px) {
+    .background-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .background {
+        height: 90%;
+        width: 100%;
+        object-fit: cover;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -2;
+
+        /* ✅ Zoom animation (5s) */
+        animation: slowZoom 5s ease-in-out forwards;
+    }
+
+    /* ✅ Overlay color */
+    .background-container::after {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: -1;
+    }
+
+    /* ✅ Keyframes for zoom-in */
+    @keyframes slowZoom {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+
+

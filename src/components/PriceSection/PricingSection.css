@@ -1,0 +1,146 @@
+.pricing-section {
+  padding: 80px 20px;
+  background: linear-gradient(to bottom right, #f9fbff, #eef2f9);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.pricing-header h2 {
+  font-size: 3rem;
+  color: #0f172a;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.pricing-header span {
+  color: var(--gradient-color-bg);
+}
+
+.pricing-header p {
+  max-width: 650px;
+  margin: 0 auto 60px auto;
+  color: #555;
+  font-size: 1.15rem;
+}
+
+/* ✅ Category Buttons (New Styling) */
+.pricing-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.tab-btn {
+  background: #fff;
+  border: 2px solid var(--gradient-color-bg);
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--gradient-color-bg);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 200px;
+}
+
+.tab-btn:hover {
+  background: linear-gradient(90deg, #6a11cb, #6a11cb);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
+}
+
+.tab-btn.active {
+  background: var(--gradient-color-bg);
+  color: #fff;
+  border-color: var(--gradient-color-bg);
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+/* Pricing Cards */
+.pricing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.pricing-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 35px 28px;
+  width: 320px;
+  position: relative;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid var(--gradient-color-bg);
+}
+
+.pricing-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+.plan-title {
+  font-size: 1.5rem;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--gradient-color-bg);
+  margin: 15px 0;
+}
+
+.duration {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 18px;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #444;
+}
+
+.plan-features li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.plan-features li::before {
+  content: "✔ ";
+  color: var(--gradient-color-bg);
+  font-weight: 600;
+}
+
+.choose-btn {
+  background: var(--gradient-color-bg);
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.choose-btn:hover {
+  background: linear-gradient(90deg, #6a11cb, #6a11cb);
+  transform: translateY(-3px);
+}
+
+
+@media (max-width: 500px) {
+   .pricing-section{
+    width: 395px;
+   }
+}
